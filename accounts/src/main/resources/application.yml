@@ -11,3 +11,20 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+  config:
+    import:
+      - "application-qa.yml"
+      - "application-prod.yml"
+
+
+build:
+  version: "3.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIs"
+  contactDetails:
+    name: "Hari - Developer"
+    email: "hariprasanthirah@gmail.com"
+  onCallSupport:
+    -9944641234
+    -9944645678
